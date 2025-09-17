@@ -39,15 +39,20 @@ function App() {
                 <a href="#problem" className="text-gray-600 hover:text-[#0a978b] transition-colors font-semibold">
                   Problem
                 </a>
+                <a href="#ursache" className="text-gray-600 hover:text-[#0a978b] transition-colors font-semibold">
+                  Ursache
+                </a>
                 <a href="#loesung" className="text-gray-600 hover:text-[#0a978b] transition-colors font-semibold">
                   Lösung
-                </a>
-                <a href="#angebot" className="text-gray-600 hover:text-[#0a978b] transition-colors font-semibold">
-                  Angebot
                 </a>
                 <a href="#programm" className="text-gray-600 hover:text-[#0a978b] transition-colors font-semibold">
                   Programm
                 </a>
+                <a href="#angebot" className="text-gray-600 hover:text-[#0a978b] transition-colors font-semibold">
+                  Angebot
+                </a>
+                
+                
               </div>
 
               {/* Mobile Menu Button */}
@@ -65,89 +70,85 @@ function App() {
 
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden">
-          <div className="max-w-5xl mx-auto px-4 md:px-6 py-6 md:py-10 text-center">
-            <h1 className="font-atteron text-4xl font-semibold text-black leading-snug">
-              <span className="text-[#0a978b]">Stoppe Cortisol-Fressattacken</span><br />
-              in 21 Tagenmit Emotionaler Entkopplung <br />
-               <span className="text-[#0a978b]">ohne Disziplin</span>
-            </h1>
+          <section className="relative overflow-hidden">
+            <div className="max-w-4xl mx-auto px-4 md:px-6 py-4 md:py-6 text-center">
+              <h1 className="font-atteron text-2xl md:text-3xl font-semibold text-black leading-snug">
+                <span className="text-[#0a978b]">Stoppe Cortisol-Fressattacken</span><br />
+                in 21 Tagen mit Emotionaler Entkopplung <br />
+                <span className="text-[#0a978b]">ohne jeglichen Mehraufwand</span>
+              </h1>
 
+              <p className="text-sm sm:text-base text-gray-600 mt-3 max-w-2xl mx-auto leading-relaxed">
+                Für dauerstressige 
+                <span className="text-primary font-semibold"> Selbstständige</span>, 
+                <span className="text-primary font-semibold"> Studenten</span> und 
+                <span className="text-primary font-semibold"> Eltern</span>, die Ihre gesunde Essgewohnheiten zurückgewinnen möchten.
+              </p>
 
-
-            <p className="text-base sm:text-lg text-gray-600 mt-4 max-w-3xl mx-auto leading-relaxed">
-              Für dauerstressige 
-              <span className="text-primary font-semibold"> Selbstständige</span>, 
-              <span className="text-primary font-semibold"> Studenten</span> und 
-              <span className="text-primary font-semibold"> Eltern</span>, die Ihre Kontrolle verlieren.
-            </p>
-
-            {/* VSL Video */}
-            <div className="mt-2 ">
-              <div className="relative bg-white rounded-lg shadow-lg p-4 max-w-2xl mx-auto">
-                <div className="relative overflow-hidden rounded-lg">
-                  <div className="aspect-video">
-                    <iframe 
-                      title="VSL Video"
-                      width="100%" 
-                      height="100%" 
-                      src="https://www.youtube.com/embed/JOEU6GE6mew?autoplay=1&loop=1&modestbranding=1&playlist=JOEU6GE6mew&rel=0" 
-                      frameBorder="0" 
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-                      className="absolute inset-0 w-full h-full rounded-lg"
-                    />
+              {/* VSL Video */}
+              <div className="mt-3">
+                <div className="relative bg-white rounded-lg shadow-md p-3 max-w-xl mx-auto">
+                  <div className="relative overflow-hidden rounded-lg">
+                    <div className="aspect-video">
+                      <iframe 
+                        title="VSL Video"
+                        src="https://www.youtube.com/embed/JOEU6GE6mew?autoplay=1&loop=1&modestbranding=1&playlist=JOEU6GE6mew&rel=0" 
+                        frameBorder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                        className="absolute inset-0 w-full h-full rounded-lg"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* CTA Button direkt sichtbar */}
-            <div className="mt-6 md:mt-8">
-              <a 
-                href="https://whop.com/checkout/plan_KUx9TprD89dFB?d2c=true" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full md:w-auto"
-              >
-                <button className="px-8 md:px-12 py-4 text-lg md:text-xl font-bold text-white bg-gradient-to-r from-primary to-secondary rounded-lg shadow-md hover:shadow-lg hover:from-secondary hover:to-primary transform hover:scale-105 transition-all duration-200 w-full md:w-auto">
-                  🚀 Jetzt für nur 275€ starten inkl. MwSt.
-                </button>
-              </a>
-            </div>
+              {/* CTA Button */}
+              <div className="mt-5">
+                <a 
+                  href="https://whop.com/checkout/plan_KUx9TprD89dFB?d2c=true" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center"
+                >
+                  <button className="px-6 md:px-8 py-3 text-base md:text-lg font-bold text-white bg-gradient-to-r from-primary to-secondary rounded-lg shadow-md hover:shadow-lg hover:from-secondary hover:to-primary transform hover:scale-105 transition-all duration-200">
+                    🚀 Jetzt für nur 275€ starten inkl. MwSt.
+                  </button>
+                </a>
+              </div>
 
-            {/* Disclaimer */}
-            <div className="mt-4 md:mt-6">
-              <p className="text-sm text-gray-500">
-                ⚠️ Dieses Programm ist nicht für ernsthafte Essstörungen geeignet. Bitte wende dich in diesem Fall an medizinisches Fachpersonal.
-              </p>
-            </div>
+              {/* Disclaimer */}
+              <div className="mt-3">
+                <p className="text-xs text-gray-500">
+                  ⚠️ Dieses Programm ist nicht für ernsthafte Essstörungen geeignet. Bitte wende dich in diesem Fall an medizinisches Fachpersonal.
+                </p>
+              </div>
 
-            {/* Trust Indicators */}
-            <div className="mt-6 md:mt-8 flex flex-wrap justify-center items-center gap-4 md:gap-6 text-sm text-gray-500">
-              <div className="flex items-center space-x-2">
-                <CheckCircle className="w-4 h-4 text-success-600" />
-                <span>Wissenschaftlich fundiert</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <CheckCircle className="w-4 h-4 text-success-600" />
-                <span>21-Tage Garantie</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <CheckCircle className="w-4 h-4 text-success-600" />
-                <span>Über 1.000 Teilnehmer</span>
+              {/* Trust Indicators */}
+              <div className="mt-4 flex flex-wrap justify-center items-center gap-3 text-xs text-gray-500">
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-3 h-3 text-success-600" />
+                  <span>Wissenschaftlich fundiert</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-3 h-3 text-success-600" />
+                  <span>21-Tage Garantie</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-3 h-3 text-success-600" />
+                  <span>Über 1.000 Teilnehmer</span>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+
       </div>
-
       
       {/* Doppelleben der Stress-Esser Section */}
-        <section className="py-16">
+        <section id="problem" className="py-16">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             {/* Header */}
             <div className="text-center mb-16">
-              <h2 className="font-atteron text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+              <h2  className="font-atteron text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
                 Das Doppelleben der <span className="text-[#0a978b]">Stress-Esser</span>
               </h2>
               <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
@@ -166,15 +167,14 @@ function App() {
                       <Target className="w-5 h-5 text-green-600" />
                     </div>
                     <p className="text-black leading-relaxed">
-                      Diszipliniert bei Meetings, strukturiert im Alltag, bewundert für deine Leistung
-                    </p>
+                        Morgens: Gesundes Frühstück, positive Ausstrahlung, alles unter Kontrolle                    </p>
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center shrink-0">
                       <TrendingUp className="w-5 h-5 text-green-600" />
                     </div>
                     <p className="text-black leading-relaxed">
-                      Karriere läuft, Projekte erfolgreich, von Kollegen respektiert
+                      Mittags: bewusst zu gesunden Snacks gegriffen
                     </p>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -182,7 +182,7 @@ function App() {
                       <Users className="w-5 h-5 text-green-600" />
                     </div>
                     <p className="text-black leading-relaxed">
-                      "Wie machst du das nur?" – Bewunderung für deine scheinbare Perfektion
+                      Abends: Ohne Stress und Schuldgefühle vom Tag und alles im Griff.
                     </p>
                   </div>
                 </div>
@@ -225,12 +225,12 @@ function App() {
 
 
         {/* Alltägliche Situationen Section */}
-          <section className="py-20 bg-red-50">
+          <section className="py-16">
             <div className="max-w-6xl mx-auto px-4 md:px-6">
               {/* Header */}
               <div className="text-center mb-12">
                 <h2 className="font-atteron text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-                  Erkennst du dich wieder?
+                  Lies das hier mal durch und du wirst dich wiedererkennen
                 </h2>
                 <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
                   Diese alltäglichen Situationen zeigen, wie tief das Problem wirklich geht
@@ -247,7 +247,7 @@ function App() {
                   <div className="space-y-3">
                     <div className="flex items-start space-x-2">
                       <span className="text-red-500 font-bold">→</span>
-                      <p className="text-gray-700 text-sm">Du gehst nicht in die Kantine, weil alle sehen, was du isst</p>
+                      <p className="text-gray-700 text-sm">Du isst das Mittagessen extra langsam, damit du nicht zu früh wieder Hunger bekommst</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <span className="text-red-500 font-bold">→</span>
@@ -255,7 +255,7 @@ function App() {
                     </div>
                     <div className="flex items-start space-x-2">
                       <span className="text-red-500 font-bold">→</span>
-                      <p className="text-gray-700 text-sm">Du lehnst spontane Lunch-Meetings ab</p>
+                      <p className="text-gray-700 text-sm">Du sagst "Ich bin nicht hungrig" und gehst dann allein zur Bäckerei um die Ecke</p>
                     </div>
                   </div>
                 </div>
@@ -278,6 +278,10 @@ function App() {
                       <span className="text-red-500 font-bold">→</span>
                       <p className="text-gray-700 text-sm">Du lügst über das, was du gegessen hast</p>
                     </div>
+                    <div className="flex items-start space-x-2">
+                      <span className="text-red-500 font-bold">→</span>
+                      <p className="text-gray-700 text-sm">Du stellst den Fernseher lauter, damit niemand die Chipstüten-Geräusche hört</p>
+                    </div>
                   </div>
                 </div>
 
@@ -289,11 +293,11 @@ function App() {
                   <div className="space-y-3">
                     <div className="flex items-start space-x-2">
                       <span className="text-red-500 font-bold">→</span>
-                      <p className="text-gray-700 text-sm">Du gehst zu verschiedenen Supermärkten, damit niemand deine Muster erkennt</p>
+                      <p className="text-gray-700 text-sm">Du packst gesunde Sachen obendrauf, damit der Korb "normal" aussieht</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <span className="text-red-500 font-bold">→</span>
-                      <p className="text-gray-700 text-sm">Du nutzt Self-Checkout, um nicht mit Kassierern zu sprechen</p>
+                      <p className="text-gray-700 text-sm">"Das ist für die Gäste am Wochenende" – aber es gibt gar keine Gäste</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <span className="text-red-500 font-bold">→</span>
@@ -314,11 +318,11 @@ function App() {
                     </div>
                     <div className="flex items-start space-x-2">
                       <span className="text-red-500 font-bold">→</span>
-                      <p className="text-gray-700 text-sm">Du planst schon den nächsten "Fressanfall" während du noch kaust</p>
+                      <p className="text-gray-700 text-sm">"Ich hab schon gegessen" – obwohl du seit Stunden nichts hattest</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <span className="text-red-500 font-bold">→</span>
-                      <p className="text-gray-700 text-sm">Du interpretierst neutrale Kommentare als Kritik</p>
+                      <p className="text-gray-700 text-sm">Du bietest extra viel Kuchen an, damit weniger für dich übrig bleibt</p>
                     </div>
                   </div>
                 </div>
@@ -329,113 +333,140 @@ function App() {
 
      
       {/* Domino Effect Consequences Section */}
-      <section className="pt-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <div className="text-center mb-20 relative z-10">
-            <h2 className="font-atteron text-3xl md:text-4xl font-semibold text-gray-900 mb-4 leading-tight">
-              Was passiert, wenn du nichts änderst?
-            </h2>
-            <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed mb-2">
-              Der Domino-Effekt: Wie ein kleines Problem dein ganzes Leben sabotiert
-            </p>
-            <p className="text-sm text-gray-500 italic">
-              Der Teufelskreis wird enger
-            </p>
-          </div>
-
-          {/* Desktop Domino Layout */}
-          <div className="hidden md:flex items-center justify-between max-w-5xl mx-auto">
-            {/* Domino 1 */}
-            <div className="text-center">
-              <div className="bg-yellow-400 w-16 h-24 rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg transform rotate-12">
-                <span className="text-2xl font-bold text-yellow-900">1</span>
-              </div>
-              <h4 className="font-bold text-gray-900 mb-2">Kleines Problem</h4>
-              <p className="text-sm text-gray-600">Gelegentliche Fressattacken nach stressigen Tagen</p>
+        <section className="pt-16 bg-white">
+          <div className="max-w-6xl mx-auto px-4 md:px-6">
+            <div className="text-center mb-20 relative z-10">
+              <h2 className="font-atteron text-3xl md:text-4xl font-semibold text-gray-900 mb-4 leading-tight">
+                Was passiert, wenn du nichts änderst?
+              </h2>
+              <p className="text-lg md:text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed mb-2">
+                Der Domino-Effekt: Wie ein kleines Problem dein ganzes Leben sabotiert
+              </p>
+              <p className="text-sm text-gray-500 italic">
+                Der Teufelskreis wird enger
+              </p>
             </div>
 
-            <div className="text-4xl text-gray-400">→</div>
-
-            {/* Domino 2 */}
-            <div className="text-center">
-              <div className="bg-orange-500 w-16 h-24 rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg transform rotate-6">
-                <span className="text-2xl font-bold text-orange-900">2</span>
-              </div>
-              <h4 className="font-bold text-gray-900 mb-2">Rückzug beginnt</h4>
-              <p className="text-sm text-gray-600">Du meidest soziale Situationen mit Essen</p>
-            </div>
-
-            <div className="text-4xl text-gray-400">→</div>
-
-            {/* Domino 3 */}
-            <div className="text-center">
-              <div className="bg-red-600 w-16 h-24 rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg transform -rotate-3">
-                <span className="text-2xl font-bold text-red-100">3</span>
-              </div>
-              <h4 className="font-bold text-gray-900 mb-2">Selbstwert schwindet</h4>
-              <p className="text-sm text-gray-600">Heimliches Essen und ständige Scham</p>
-            </div>
-
-            <div className="text-4xl text-gray-400">→</div>
-
-            {/* Domino 4 */}
-            <div className="text-center">
-              <div className="bg-gray-800 w-16 h-24 rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg transform -rotate-12">
-                <span className="text-2xl font-bold text-gray-100">4</span>
-              </div>
-              <h4 className="font-bold text-gray-900 mb-2">Lebenssabotage</h4>
-              <p className="text-sm text-gray-600">Beruflicher und persönlicher Erfolg wird sabotiert</p>
-            </div>
-          </div>
-
-
-          {/* Mobile Domino Layout */}
-          <div className="md:hidden space-y-6">
-            <div className="flex items-center">
-              <div className="bg-yellow-400 w-12 h-16 rounded-lg flex items-center justify-center mr-4 shadow-lg">
-                <span className="text-xl font-bold text-yellow-900">1</span>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 mb-1">Kleines Problem</h4>
+            {/* Desktop Domino Layout */}
+            <div className="hidden md:flex items-center justify-between max-w-5xl mx-auto">
+              {/* Domino 1 */}
+              <div className="text-center">
+                <div className="bg-yellow-400 w-16 h-24 rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg transform rotate-12">
+                  <span className="text-2xl font-bold text-yellow-900">1</span>
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">Kleines Problem</h4>
                 <p className="text-sm text-gray-600">Gelegentliche Fressattacken nach stressigen Tagen</p>
               </div>
-            </div>
-            <div className="text-center text-2xl text-gray-400">↓</div>
-            
-            <div className="flex items-center">
-              <div className="bg-orange-500 w-12 h-16 rounded-lg flex items-center justify-center mr-4 shadow-lg">
-                <span className="text-xl font-bold text-orange-900">2</span>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 mb-1">Rückzug beginnt</h4>
+
+              <div className="text-4xl text-gray-400">→</div>
+
+              {/* Domino 2 */}
+              <div className="text-center">
+                <div className="bg-orange-500 w-16 h-24 rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg transform rotate-6">
+                  <span className="text-2xl font-bold text-orange-900">2</span>
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">Rückzug beginnt</h4>
                 <p className="text-sm text-gray-600">Du meidest soziale Situationen mit Essen</p>
               </div>
-            </div>
-            <div className="text-center text-2xl text-gray-400">↓</div>
-            
-            <div className="flex items-center">
-              <div className="bg-red-600 w-12 h-16 rounded-lg flex items-center justify-center mr-4 shadow-lg">
-                <span className="text-xl font-bold text-red-100">3</span>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 mb-1">Selbstwert schwindet</h4>
+
+              <div className="text-4xl text-gray-400">→</div>
+
+              {/* Domino 3 */}
+              <div className="text-center">
+                <div className="bg-red-600 w-16 h-24 rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg transform -rotate-3">
+                  <span className="text-2xl font-bold text-red-100">3</span>
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">Selbstwert schwindet</h4>
                 <p className="text-sm text-gray-600">Heimliches Essen und ständige Scham</p>
               </div>
-            </div>
-            <div className="text-center text-2xl text-gray-400">↓</div>
-            
-            <div className="flex items-center">
-              <div className="bg-gray-800 w-12 h-16 rounded-lg flex items-center justify-center mr-4 shadow-lg">
-                <span className="text-xl font-bold text-gray-100">4</span>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 mb-1">Lebenssabotage</h4>
+
+              <div className="text-4xl text-gray-400">→</div>
+
+              {/* Domino 4 */}
+              <div className="text-center">
+                <div className="bg-gray-800 w-16 h-24 rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg transform -rotate-12">
+                  <span className="text-2xl font-bold text-gray-100">4</span>
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">Lebenssabotage</h4>
                 <p className="text-sm text-gray-600">Beruflicher und persönlicher Erfolg wird sabotiert</p>
+              </div>
+
+              <div className="text-4xl text-gray-400">→</div>
+
+              {/* Domino 5 */} 
+              <div className="text-center">
+                <div className="bg-red-500 w-16 h-24 rounded-lg flex items-center justify-center mb-4 mx-auto shadow-lg transform rotate-3">
+                  <span className="text-2xl font-bold text-red-100">5</span>
+                </div>
+                <h4 className="font-bold text-gray-900 mb-2">Kilos Purzeln</h4>
+                <p className="text-sm text-gray-600">Die ständigen Fressattacken sind auf der Waage zu spüren</p>
+              </div>
+            </div>
+
+            {/* Mobile Domino Layout */}
+            <div className="md:hidden space-y-6">
+              {/* Domino 1 */}
+              <div className="flex items-center">
+                <div className="bg-yellow-400 w-12 h-16 rounded-lg flex items-center justify-center mr-4 shadow-lg">
+                  <span className="text-xl font-bold text-yellow-900">1</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">Kleines Problem</h4>
+                  <p className="text-sm text-gray-600">Gelegentliche Fressattacken nach stressigen Tagen</p>
+                </div>
+              </div>
+              <div className="text-center text-2xl text-gray-400">↓</div>
+
+              {/* Domino 2 */}
+              <div className="flex items-center">
+                <div className="bg-orange-500 w-12 h-16 rounded-lg flex items-center justify-center mr-4 shadow-lg">
+                  <span className="text-xl font-bold text-orange-900">2</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">Rückzug beginnt</h4>
+                  <p className="text-sm text-gray-600">Du meidest soziale Situationen mit Essen</p>
+                </div>
+              </div>
+              <div className="text-center text-2xl text-gray-400">↓</div>
+
+              {/* Domino 3 */}
+              <div className="flex items-center">
+                <div className="bg-red-600 w-12 h-16 rounded-lg flex items-center justify-center mr-4 shadow-lg">
+                  <span className="text-xl font-bold text-red-100">3</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">Selbstwert schwindet</h4>
+                  <p className="text-sm text-gray-600">Heimliches Essen und ständige Scham</p>
+                </div>
+              </div>
+              <div className="text-center text-2xl text-gray-400">↓</div>
+
+              {/* Domino 4 */}
+              <div className="flex items-center">
+                <div className="bg-gray-800 w-12 h-16 rounded-lg flex items-center justify-center mr-4 shadow-lg">
+                  <span className="text-xl font-bold text-gray-100">4</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">Lebenssabotage</h4>
+                  <p className="text-sm text-gray-600">Beruflicher und persönlicher Erfolg wird sabotiert</p>
+                </div>
+              </div>
+              <div className="text-center text-2xl text-gray-400">↓</div>
+
+              {/* Domino 5 */}
+              <div className="flex items-center">
+                <div className="bg-red-500 w-12 h-16 rounded-lg flex items-center justify-center mr-4 shadow-lg">
+                  <span className="text-xl font-bold text-red-100">5</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-900 mb-1">Mehr Kilos auf der Waage</h4>
+                  <p className="text-sm text-gray-600">Die ständigen Fressattacken lassen dein Gewicht steigen</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
 
       {/* Benefits & Consequences Section */}
       <section className="bg-white">
@@ -447,7 +478,7 @@ function App() {
                   {/* Benefits */}
                   <div className="bg-[#E0F7F5] p-6 rounded-lg border border-[#B2E2DE]">
                     <h3 className="font-atteron text-lg font-bold text-[#0A988B] mb-4">
-                      Deine neue Realität
+                      Dein Leben, wenn du Kontrolle übernimmst
                     </h3>
                     <div className="space-y-3 text-sm">
                       <div className="flex items-center">
@@ -464,7 +495,7 @@ function App() {
                       </div>
                       <div className="flex items-center">
                         <CheckCircle className="text-[#0A988B] mr-3 flex-shrink-0" size={16} />
-                        <span>Ein positives Vorbild für deine Familie sein</span>
+                        <span>Einen Alltag ohne Essanfälle genießen</span>
                       </div>
                     </div>
                   </div>
@@ -518,7 +549,7 @@ function App() {
       
 
       {/* Problem Section */}
-      <section id="problem" className="py-20 px-4 md:px-6">
+      <section id="ursache" className="py-20 px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
          <h2 className="font-atteron text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Die <span className="text-[#0a978b]">überraschende Hauptursache</span> deiner nächtlichen Fressattacken
@@ -564,7 +595,7 @@ function App() {
       </section>
 
       {/* Solution Section */}
-      <section id="solution" className="py-12 px-4 md:px-6 bg-white">
+      <section id="loesung" className="py-12 px-4 md:px-6 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-atteron text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Die Lösung: <span className="text-[#0A988B]">Emotionale Entkopplung</span>
@@ -593,7 +624,7 @@ function App() {
       </section>
 
       {/* System Section */}
-      <section id="system" className="py-12 px-4 md:px-6">
+      <section id="programm" className="py-12 px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-atteron text-2xl md:text-3xl font-bold text-gray-900 mb-4">
@@ -606,7 +637,7 @@ function App() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {/* Phase 1 */}
-            <div className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+            <div className="bg-white p-6  rounded-lg shadow-sm border hover:shadow-md transition-shadow">
               <div className="flex items-center mb-4">
                 <div className="bg-[#0A988B] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm mr-3">1</div>
                 <h3 className="font-atteron font-bold text-gray-900">Grundlagen</h3>
@@ -655,7 +686,7 @@ function App() {
             </div>
 
             {/* Phase 3 */}
-            <div className="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 border-[#0A988B]rounded-lg shadow-sm border hover:shadow-md transition-shadow">
               <div className="flex items-center mb-4">
                 <div className="bg-[#0A988B] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm mr-3">3</div>
                 <h3 className="font-atteron font-bold text-gray-900">Trigger ausspüren</h3>
@@ -774,11 +805,11 @@ function App() {
 
 
       {/* Offer Section */}
-      <div id="offer" className="py-16 px-4 md:px-6">
+      <div id="angebot" className="py-16 px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-atteron text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Brain Food Reset - Das 6-Phasen-System
+              Brain Food Reset - Dein Deal
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Wissenschaftlich fundierte Emotionale Entkopplung gegen Cortisol-Fressattacken
@@ -1344,7 +1375,7 @@ function App() {
 
 
       {/* Duality Section */}
-      <section className="py-20 px-4 md:px-6 bg-white">
+      <section className="py-16 px-4 md:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-atteron text-2xl md:text-3xl font-bold text-[#000000] mb-4">
@@ -1355,7 +1386,7 @@ function App() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <div className="bg-white rounded-lg shadow-md border border-gray-200">
               <div className="bg-red-50 border-l-4 border-red-500 p-8 rounded-lg">
                 <h3 className="text-2xl font-bold text-red-800 mb-4">DER CORTISOL-GEFANGENE</h3>
                 <p className="text-sm text-red-600 mb-6 italic">Dein Leben ohne emotionale Entkopplung</p>
@@ -1369,8 +1400,8 @@ function App() {
             </div>
             
             {/* Bewusste Entscheider */}
-            <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <div className="bg-green-50 border-l-4 border-green-500 p-8 rounded-lg">
+            <div className="bg-white rounded-lg shadow-md border border-gray-200">
+              <div className="bg-green-50 border-l-4 border-green-500 p-8 rounded-lg h-full flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-green-800 mb-4">DER BEWUSSTE ENTSCHEIDER</h3>
                 <p className="text-sm text-green-600 mb-6 italic">Dein Leben mit emotionaler Entkopplung</p>
                 
@@ -1386,7 +1417,7 @@ function App() {
           </div>
         </div>
         
-          <div className="text-center py-10">
+          <div className="text-center py-16">
             <a href="https://whop.com/checkout/plan_KUx9TprD89dFB?d2c=true" target="_blank" rel="noopener noreferrer">
               <button className="bg-gradient-to-r from-[#0A988B] to-[#0D7A6F] text-white px-12 py-4 rounded-lg font-bold text-xl hover:shadow-lg transform hover:scale-105 transition-all duration-200 shadow-md w-full md:w-auto">
                 🚀 Jetzt für nur 275€ starten inkl. MwSt.
