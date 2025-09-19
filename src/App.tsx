@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CheckCircle, Target, TrendingUp, Users, AlertTriangle, Brain, Moon, Heart, Video, Calendar, FileText, BarChart3, Zap, Shield, Star } from 'lucide-react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Popup from "./components/popup";
+import Footer from "./components/footer";
+import ThankYouPage from './components/thankyou'; 
 
-function App() {
+
+function LandingPage() {
   const [isVisible, setIsVisible] = useState({
     phase1: false,
     phase2: false,
@@ -1551,54 +1556,30 @@ function App() {
           </p>
         </div>
       </section>
+        
+       
+        
 
-      <footer className="bg-slate-800 text-white px-4 md:px-6" style={{minHeight: '30vh'}}>
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col justify-center h-full py-12">
-            <div className="text-center mb-8">
-              <h3 className="font-['Unbounded'] text-2xl font-bold mb-6">Brain Food Reset</h3>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div>
-                <h4 className="font-bold mb-4 text-lg">Programm</h4>
-                <ul className="space-y-2 text-gray-300">
-                  <li>6-Phasen-System</li>
-                  <li>Wissenschaftliche Basis</li>
-                  <li>Praktische Umsetzung</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="font-bold mb-4 text-lg">Support</h4>
-                <ul className="space-y-2 text-gray-300">
-                  <li>60 Tage Geld-zurück-Garantie</li>
-                  <li>Lebenslanger Zugang</li>
-                  <li>Sofortiger Start</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="font-bold mb-4 text-lg">Rechtliches</h4>
-                <ul className="space-y-2 text-gray-300">
-                  <li>Datenschutz</li>
-                  <li>Impressum</li>
-                  <li>AGB</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="text-center mt-8 pt-8 border-t border-gray-600">
-              <p className="text-gray-400">
-                © 2025 Brain Food Reset. Alle Rechte vorbehalten.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
     </>
   );
 }
+
+
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+         <Popup />
+        <Footer />
+        <Route path="/thankyou" element={<ThankYouPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+
 
 export default App;
