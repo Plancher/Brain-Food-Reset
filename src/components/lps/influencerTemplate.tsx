@@ -1,16 +1,17 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { CheckCircle, Target, TrendingUp, Users, AlertTriangle, Brain, Moon, Heart, Video, Calendar, FileText, BarChart3, Zap, Shield, Star } from 'lucide-react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import sarahImg from "./img/Sarah.jpeg";
-import marcusImg from "./img/Marcus.jpeg";
-import annaImg from "./img/Anna.jpeg";
-import jonasImg from "./img/Jonas.jpeg";
-import Countdown from "./components/countdown.tsx";
-import CollabBadge from "./components/collabBadge.tsx";
-import silas from "./img/Marcus.jpeg";
-import influencer from "./img/Anna.jpeg";
-import ThankYouPage from './components/thankyou';
-import InfluencerTemplate from './components/lps/influencerTemplate.tsx';
+import sarahImg from "../../img/Sarah.jpeg";
+import marcusImg from "../../img/Marcus.jpeg";
+import annaImg from "../../img/Anna.jpeg";
+import jonasImg from "../../img/Jonas.jpeg";
+import Countdown from "../countdown.tsx";
+import CollabBadge from "../collabBadge.tsx";
+import silas from "../../img/Marcus.jpeg";
+import influencer from "../../img/Anna.jpeg";
+import ThankYouPage from '../thankyou.tsx';
+
+
 
 
 function LandingPage() {
@@ -1484,9 +1485,11 @@ function LandingPage() {
             </p>
           </div>
 
-      </section>      
+      </section>
 
-                
+                  
+      
+
       {/* Combined FAQ Section */}
       <section className="py-16 px-4 md:px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
@@ -1664,16 +1667,15 @@ function LandingPage() {
 
 
 
-function App() {
+function influencerTemplate() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/thankyou" element={<ThankYouPage />} />
-        <Route path="/influencer-template" element={<InfluencerTemplate />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default LandingPage;
