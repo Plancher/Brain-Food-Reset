@@ -1651,13 +1651,6 @@ function LandingPage() {
         </div>
       </footer>
     </div>
-    {/* Countdown einsetzen */}
-      <Countdown startDate="2025-09-22T18:00:00" durationHours={72} />
-      <CollabBadge 
-        silas={silas} 
-        influencer={influencer} 
-        text="Team-Up" 
-      />
     </>
   );
 }
