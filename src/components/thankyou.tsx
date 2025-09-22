@@ -1,7 +1,6 @@
-import React from "react";
 import { CheckCircle, BookOpen, Users, Calendar, Zap, AlertTriangle, ArrowDown } from "lucide-react";
-import sarah from '../img/sarah.jpeg';
-import marcus from '../img/marcus.jpeg';
+import sarah from './img/sarah.jpeg';
+import marcus from './img/marcus.jpeg';
 import ProgressBar from './progressbar';
 
 const bulletIconMap: Record<string, JSX.Element> = {
