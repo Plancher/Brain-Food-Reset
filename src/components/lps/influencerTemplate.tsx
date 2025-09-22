@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { CheckCircle, Target, TrendingUp, Users, AlertTriangle, Brain, Moon, Heart, Video, Calendar, FileText, BarChart3, Zap, Shield, Star } from 'lucide-react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import sarahImg from "../../img/Sarah.jpeg";
 import marcusImg from "../../img/Marcus.jpeg";
 import annaImg from "../../img/Anna.jpeg";
@@ -9,7 +8,6 @@ import Countdown from "../countdown.tsx";
 import CollabBadge from "../collabBadge.tsx";
 import silas from "../../img/Marcus.jpeg";
 import influencer from "../../img/Anna.jpeg";
-import ThankYouPage from '../thankyou.tsx';
 
 
 
@@ -1665,17 +1663,5 @@ function LandingPage() {
   );
 }
 
-
-
-function influencerTemplate() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/thankyou" element={<ThankYouPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
 
 export default LandingPage;

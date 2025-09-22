@@ -1,7 +1,7 @@
 import { CheckCircle, BookOpen, Users, Calendar, Zap, AlertTriangle, ArrowDown } from "lucide-react";
-import sarah from './img/sarah.jpeg';
-import marcus from './img/marcus.jpeg';
-import ProgressBar from './progressbar';
+import sarah from '../img/Sarah.jpeg';
+import marcus from '../img/Marcus.jpeg';
+import ProgressBar from './progressbar.tsx';
 
 const bulletIconMap: Record<string, JSX.Element> = {
   access: <CheckCircle className="w-6 h-6 text-[#0a978b]" />,
